@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             document.getElementById("resultado").innerText =(Math.round(num * 100) / 100).toFixed(2);
         }
-        document.getElementById("resultado").innerText =(Math.round(num * 100) / 100).toFixed(2); 
+ 
     }
 
     document.getElementById("enviador").addEventListener("click", calcular)
