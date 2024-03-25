@@ -5,14 +5,19 @@ document.addEventListener("DOMContentLoaded", () => {
         let ta = document.getElementById("ta").value
         let nh = document.getElementById("nh").value
         let ma = document.getElementById("ma").value
-        let num = ((ma*ta - (890*nh)) / (ma + (10*nh)))
+        let num = ((ma*ta - (890 * nh)) / (ma + (10*nh)))
+        console.log(ma)
+        console.log(ta)
+        console.log(nh)
+        console.log((ma*ta - (890 * nh)))
+        console.log((ma + (10*nh)))
 
         if (num < 0) {
             document.getElementById("resultado").innerText = 0
         } else {
             document.getElementById("resultado").innerText =(Math.round(num * 100) / 100).toFixed(2);
         }
- 
+        
     }
 
     document.getElementById("enviador").addEventListener("click", calcular)
