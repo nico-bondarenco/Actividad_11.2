@@ -2,20 +2,22 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Code Challenge</title>
+    <title>Calculeitor</title>
     <script src="eventos.js"></script>
 </head>
 
 <body>
-    <h1>FORMULARIO</h1>
+    <h1>Calculador de temperaturas</h1>
     <div style="background-color: antiquewhite;">
-        <label for="nombre"> Nombre: </label><br>
-        <input type="text" id="nombre" name="nombre"><br>
-        <label for="apellido"> Apellido: </label><br>
-        <input type="text" id="apellido" name="apellido"><br>
-        <label for="date"> Fecha de nacimiento: </label><br>
-        <input type="date" id="date" name="date"><br>
+        <label for="ta"> Temperatura de agua </label><br>
+        <input type="number" id="ta" name="ta"><br>
+        <label for="nh"> Cantidad de hielos </label><br>
+        <input type="number" id="nh" name="nh"><br>
+        <label for="ma"> Mililitros de agua </label><br>
+        <input type="number" id="ma" name="ma"><br>
         <br><br>
-        <button id="enviador">BOTON DE LA ENVIACIÓN</button>
+        <button id="enviador">Calcular</button>
+
+        <h1 id="resultado"></h1>
     </div>
 </body>

@@ -1,24 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    function enviar() {
-        let nombre = document.getElementById("nombre").value
-        let apellido = document.getElementById("apellido").value
-        let date = document.getElementById("date").value
+    
+    function calcular() {
+        let ta = document.getElementById("ta").value
+        let nh = document.getElementById("nh").value
+        let ma = document.getElementById("ma").value
 
-        fetch('https://jsonplaceholder.typicode.com/users', {
-            headers: { "Content-Type": "application/json; charset=utf-8" },
-            method: 'POST',
-            body: JSON.stringify({
-                nombre: nombre,
-                apellido: apellido,
-                fecha: date
-            })
-        })
-            .then(response => response.json())
-            .then(data => alert("Esta es una alerta con los datos que se enviaron: " + data.nombre + " " + data.apellido + " nació el " + data.fecha))
+        document.getElementById("resultado").value = ((ta*ma/(10*h))-70.83)/((ma/(10*nh))+1)  
     }
 
-    document.getElementById("enviador").addEventListener("click", enviar)
+    document.getElementById("enviador").addEventListener("click", calcular)
 })
 
 
